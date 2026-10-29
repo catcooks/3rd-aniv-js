@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Anniversary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="anniv-page">
+      <!-- ───────── hero ───────── -->
+      <main class="anniv">
+        <div class="anniv__leaves" id="leaves" aria-hidden="true"></div>
+
+        <section class="anniv__stage">
+          <p class="anniv__date" id="date">Together since October 30 2023</p>
+          <h1 class="anniv__title" id="title"></h1>
+          <p class="anniv__name" id="name">Kimberly Rose</p>
+
+          <!-- outer wrapper grows in, the bouquet itself shakes on click -->
+          <div class="anniv__grow" id="heroBouquet"></div>
+
+          <p class="anniv__hint" id="heroHint">tap the bouquet</p>
+          <div class="anniv__note" id="heroNote" hidden></div>
+        </section>
+
+        <button type="button" class="anniv__scroll" id="scrollBtn">
+          <span>scroll me</span>
+          <span id="chevron" aria-hidden="true"></span>
+        </button>
+      </main>
+
+      <!-- ───────── scattered bouquets + paper airplane ───────── -->
+      <div class="trail-wrap">
+        <section class="trail" id="trail">
+          <div class="trail__bits" id="bits" aria-hidden="true"></div>
+          <div class="trail__rows" id="rows"></div>
+          <div class="trail__sky" aria-hidden="true">
+            <div class="trail__plane" id="plane">
+              <div class="trail__tilt" id="tilt">
+                <div class="trail__bob" id="bob"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="slideshow" id="slideshow" aria-label="Our photos">
+        <h1 class="anniv__title">Happy 3rd Anniversary</h1>
+        
+        <div class="slideshow__frame" id="slideFrame"></div>
+        <div class="slideshow__dots" id="slideDots"></div>
+        <h1 class="anniv__title">to us</h1>
+      </section>
+    </div>
+    <script src="scripts/icons.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/music.js"></script>
+    <script src="scripts/slideshow.js"></script>
+  </body>
+</html>
